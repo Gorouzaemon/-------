@@ -99,6 +99,18 @@ span{
 .content #myinfo .en{
     margin-bottom: 4vh;
 }
+.content #myinfo p span{
+    display: inline-block;
+}
+.content #myinfo .p-1{
+    background-image: linear-gradient(transparent 50%,#ffff66 50%);
+}
+.content #myinfo .p-2{
+    background-image: linear-gradient(transparent 50%,#33ffff 50%);
+}
+.content #myinfo .p-3{
+    background-image: linear-gradient(transparent 50%,#ff3366 50%);
+}
 .content #myinfo .info-img{
     position: absolute;
     top:12vh ;
@@ -110,7 +122,8 @@ span{
 }
 .content #mysite .flex{
     display: flex;
-    width: 84%;
+    width: 100%;
+    justify-content: space-between;
 }
 .content #mysite .flex .left{
     width: 46%;
@@ -119,8 +132,20 @@ span{
     margin-top:50px ;
     width: 46%;
 }
+.content #mysite .flex .item{
+    margin-bottom:80px ;
+}
 .content #mysite .flex .item a:hover{
   opacity: 0.7;
+}
+.content #mysite .flex .item .site-name{
+    padding: 20px 0 40px 0;
+    font-size: 30px;
+}
+.content #mysite .flex .item dl{
+    display: flex;
+   width: 100%;
+   flex-wrap: wrap;
 }
 .content #mysite .flex .item dl dt{
     width: 30%;
@@ -133,6 +158,10 @@ span{
     opacity: 1;
     text-align: center;
 }
+#footer .section-title{
+    font-size: 60px;
+    padding: 40px 0 40px 0;
+}
 #footer .flex{
     display: flex;
     width: 84%;
@@ -140,22 +169,17 @@ span{
     justify-content: space-between;
 }
 #footer .flex .item{
-    width: 28%;
-
+    width: 20%;
 }
-#footer .flex .item:nth-child(1){
-    background-image: url();
+#footer .flex .item a{
+   display: flex;
+   flex-direction: column;
+   font-size: 25px;
 }
-#footer .flex .item:nth-child(2) a{
-    background-image: url("img/jmailprofile.jpeg");
-}
-#footer .flex .item:nth-child(3){
-    background-image: url();
-}
-#footer .flex .item img{
-    height:50px;
+#footer .flex .item a img{
+    object-fit: cover;
+    height: 200px;
     border-radius: 50%;
-    background-size:cover ;
 }
 @media  screen and (max-width:894px) {
     
