@@ -1,0 +1,73 @@
+#page-top a{
+    clip-path: polygon(50% 0%, 73% 21%, 98% 35%, 83% 69%, 84% 100%, 50% 89%, 14% 100%, 13% 68%, 2% 35%, 20% 23%);
+    display: flex;
+	justify-content:center;
+	align-items:center;
+    height: 80px;
+    width: 80px;
+	background:#ffff99;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase; 
+	text-decoration: none;
+	font-size:0.6rem;
+	transition:all 0.3s;
+   
+}
+
+
+
+/* 動かない！？？？？ */
+
+@keyframes arrowmove {
+    0%{bottom:100px;}
+    50%{bottom:110px;}
+   100%{bottom:100px;}
+}
+#page-top a:hover{
+    background-color: #ff66ff;
+}
+
+#page-top {
+	position: fixed;
+	left: 10px;
+	bottom:100px;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateX(100px);
+    animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*　左の動き　*/
+
+#page-top.LeftMove{
+	animation: LeftAnime 0.5s forwards;
+}
+
+@keyframes LeftAnime{
+  from {
+    opacity: 1;
+	transform: translateX(30px);
+  }
+  to {
+    opacity: 0;
+	transform: translateX(0);
+  }
+}
+
+/*　右の動き　*/
+
+#page-top.RightMove{
+	animation: RightAnime 0.5s forwards;
+}
+@keyframes RightAnime{
+  from {
+  	opacity: 0;
+	transform: translateX(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateX(30px);
+  }
+}

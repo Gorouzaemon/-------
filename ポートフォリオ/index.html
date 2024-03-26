@@ -19,11 +19,12 @@
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/page-top.css">
   <link rel="stylesheet" href="css/hamburger.css">
+  <link rel="stylesheet" href="css/inview.css">
 </head>
 <body>
-  <header id="header">
-
-  </header>
+  <!-- 背景画像 -->
+ 
+  <!-- 左から準ハンバーガーメニュー -->
   <div class="openbtn">aiueo</div>
 <nav id="g-nav">
 <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
@@ -52,7 +53,7 @@
       自分の理想に向かって日々決して努力を惜しまないように努めています。<br>web製作に関しても将来的には英語圏のクラウドソーシングサービスに対応できるように
     日々jsやcssなどの知識を蓄えています。</p>
      </h1>
-     <img src="img/profile.jpeg" alt="" class="info-img cap" data-tippy-content="この写真は長野県のHakuba47で撮りました！">
+     <img src="img/profile.jpeg" alt="" class="info-img cap js-fade" data-tippy-content="この写真は長野県のHakuba47で撮りました！">
     </section>
     <section id="mysite" class="wrapper">
       <h1 class="section-title">
@@ -61,23 +62,23 @@
       </h1>
     <div class="flex">
       <div class="left">
-        <div class="item">
-          <a href="">
-            <img src="" alt="">
+        <div class="item js-fade">
+          <a href="https://gorouzaemon.github.io/1-6----/">
+            <img src="img\wooden jewerly.jpg" alt="">
           </a>
-            <h2 class="site-name"></h2>
+            <h2 class="site-name">Wooden Jewelry</h2>
             <p></p>
             <dl>
               <dt>製作期間</dt>
-              <dd></dd>
+              <dd>4days</dd>
               <dt>目安単価</dt>
-              <dd></dd>
+              <dd>¥30000</dd>
               <dt>使用言語</dt>
               <dd>HTML,CSS,Javascript(jquery)</dd>
             </dl>
           
         </div>
-        <div class="item">
+        <div class="item js-fade">
           <a href="https://gorouzaemon.github.io/--------/">
             <img src="img\hanshin.jpg" alt="">
           </a>
@@ -97,33 +98,33 @@
         </div>
       </div>
       <div class="right">
-        <div class="item">
-          <a href="">
-            <img src="" alt="">
+        <div class="item js-fade">
+          <a href="https://gorouzaemon.github.io/1-4------/">
+            <img src="img\recipeuntyara.jpg" alt="">
           </a>
-            <h2 class="site-name"></h2>
+            <h2 class="site-name">Recipy Diary</h2>
             <p></p>
             <dl>
               <dt>製作期間</dt>
-              <dd></dd>
+              <dd>5days</dd>
               <dt>目安単価</dt>
-              <dd></dd>
+              <dd>¥30000</dd>
               <dt>使用言語</dt>
               <dd>HTML,CSS,Javascript(jquery)</dd>
             </dl>
          
         </div>
-        <div class="item">
-          <a href="">
-            <img src="" alt="">
+        <div class="item js-fade">
+          <a href="https://gorouzaemon.github.io/1-5----/">
+            <img src="img\recipeuntyara2.jpg" alt="">
           </a>
-            <h2 class="site-name"></h2>
+            <h2 class="site-name">Recipe Dairy2</h2>
             <p></p>
             <dl>
               <dt>製作期間</dt>
-              <dd></dd>
+              <dd>3days</dd>
               <dt>目安単価</dt>
-              <dd></dd>
+              <dd>¥30000</dd>
               <dt>使用言語</dt>
               <dd>HTML,CSS,Javascript(jquery)</dd>
             </dl>
@@ -135,13 +136,14 @@
   <footer id="footer">
     <h2 class="section-title">Contact</h2>
     <ul class="flex">
-      <li class="item">
+      <li class="item js-fade">
         <a href=""><img src="img\intagramprofile.jpg" alt="">Instagram</a></li>
-      <li class="item">
+      <li class="item js-fade">
         <a href=""><img src="img\jmailprofile.jpeg" alt="">Gmail</a></li>
-      <li class="item">
+      <li class="item js-fade">
         <a href="">Crowd Works</a></li>
     </ul>
+    <p id="page-top"><a href="#">Page Top</a></p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/slick.js"></script>
@@ -150,8 +152,11 @@
   <script src="js/scrolldown.js"></script>
   <script src="js/mainvisual.js"></script>
   <script src="js/tippy.js"></script>
+  <script src="js/inview.js"></script>
   <!-- ツールチップのためのjs -->
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
+  <!-- inviewのためのjs -->
+  <script type="text/javascript" src="js/jquery.inview.js"></script>
 </body>
 </html>

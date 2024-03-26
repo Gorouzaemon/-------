@@ -17,13 +17,31 @@ ul{
     list-style: none;
 }
 body{
-    background-image:url(../img/mainvisual1.jpg) ;
     opacity: 0.7;
-    background-size: cover;
-    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
+    position: relative;
+    background-size: cover;
+   background-image: url("../img/mainvisual1.jpg"),url("../img/mainvisual2.jpeg"),url("../img/maivisual3.jpg");
+    width: 100%;
+    height: 100vh;
+    animation: image_anime 30s ease-in-out infinite; 
+    /* forwardsを設定すると100%の状態で止まる */
+    animation-fill-mode: forwards; 
+    /* animationを開始する時間を設定 */
+    animation-delay: 2s; 
+  }
+  
+  @keyframes image_anime {
+    33% {
+      /* 切り替え後の画像 */
+      background-image: url("../img/mainvisual2.jpeg"); 
+    }
+    66%{
+        background-image: url("../img/maivisual3.jpg");
+    }
+  }
+  
 .section-title .ja{
     font-size: 40px;
     font-weight: 400;
@@ -120,6 +138,9 @@ span{
     height: 300px ;
     object-fit: cover;
 }
+.content #mysite .section-title .en{
+    margin-bottom: 4vh;
+}
 .content #mysite .flex{
     display: flex;
     width: 100%;
@@ -129,7 +150,7 @@ span{
     width: 46%;
 }
 .content #mysite .flex .right{
-    margin-top:50px ;
+    margin-top:80px ;
     width: 46%;
 }
 .content #mysite .flex .item{
@@ -137,6 +158,11 @@ span{
 }
 .content #mysite .flex .item a:hover{
   opacity: 0.7;
+}
+.content #mysite .flex .item a img{
+    width: 550px;
+    height: 320px;
+    object-fit: cover;
 }
 .content #mysite .flex .item .site-name{
     padding: 20px 0 40px 0;

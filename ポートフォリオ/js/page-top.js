@@ -1,13 +1,13 @@
 function PageTopAnime() {
     var scroll = $(window).scrollTop();
     if (scroll >= 200){//上から200pxスクロールしたら
-        $('#page-top').removeClass('RightMove');//#page-topについているRightMoveというクラス名を除く
-        $('#page-top').addClass('LeftMove');//#page-topについているLeftMoveというクラス名を付与
+        $('#page-top').removeClass('LeftMove');//#page-topについているRightMoveというクラス名を除く
+        $('#page-top').addClass('RightMove');//#page-topについているLeftMoveというクラス名を付与
     }else{
         if(
-            $('#page-top').hasClass('LeftMove')){//すでに#page-topにLeftMoveというクラス名がついていたら
-            $('#page-top').removeClass('LeftMove');//LeftMoveというクラス名を除き
-            $('#page-top').addClass('RightMove');//RightMoveというクラス名を#page-topに付与
+            $('#page-top').hasClass('RightMove')){//すでに#page-topにLeftMoveというクラス名がついていたら
+            $('#page-top').removeClass('RightMove');//LeftMoveというクラス名を除き
+            $('#page-top').addClass('LeftMove');//RightMoveというクラス名を#page-topに付与
         }
     }
 }
