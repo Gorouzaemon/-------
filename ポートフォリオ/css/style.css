@@ -1,0 +1,162 @@
+html{
+    font-size: 100%;
+}
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+.wrapper{
+   margin: 0 auto;
+   max-width: 1200px;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-image:url(../img/mainvisual1.jpg) ;
+    opacity: 0.7;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.section-title .ja{
+    font-size: 40px;
+    font-weight: 400;
+ }
+ .section-title .en{
+     font-size: 60px;
+     font-weight: 600;
+ }
+.mainvisual{
+    height: 100vh;
+    position: relative;
+}
+.mainvisual-senten{
+    font-family: "Nanum Gothic", sans-serif;
+        font-style: normal;    
+        color: #fff;
+        text-align: center;
+        transform: skewX(-15deg);
+        padding-top: 300px ;
+}
+.mainvisual-senten .Thank{
+    font-size: 40px;
+}
+.mainvisual-senten .Goemon{
+    font-size: 120px;
+    font-weight: 100;
+}
+.mainvisual-senten .border{
+    height: 2px;
+    width: 240px;
+    background-color: #fff;
+    margin: 2px auto;
+}
+.mainvisual-senten.border::after{
+ transform: scale(0,1);
+    transition: all 0.4s ease-in-out;
+}
+.mainvisual-senten.border:hover::after{
+    transform: scale(1,1);
+}
+/* 線伸ばすのかなり苦労している */
+
+
+
+.mainvisual .studio{
+    font-family: "Nanum Gothic", sans-serif;
+    font-style: normal;    
+    color: #fff;
+    transform: skewX(-15deg);
+    position: absolute;
+    top: 85%;
+    right: 10%;
+    font-size: 30px;
+}
+.content{
+    font-family: "Shippori Mincho", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+    background-color: #F1F1F2;
+}
+span{
+    display: block;
+}
+.content #myinfo{
+    position: relative;
+    height: 70vh;
+   
+}
+.content #myinfo .section-title{
+    padding-top: 28vh;
+}
+.content #myinfo .en{
+    margin-bottom: 4vh;
+}
+.content #myinfo .info-img{
+    position: absolute;
+    top:12vh ;
+    right: 70px;
+    border-radius:30px ;
+    width: 300px;
+    height: 300px ;
+    object-fit: cover;
+}
+.content #mysite .flex{
+    display: flex;
+    width: 84%;
+}
+.content #mysite .flex .left{
+    width: 46%;
+}
+.content #mysite .flex .right{
+    margin-top:50px ;
+    width: 46%;
+}
+.content #mysite .flex .item a:hover{
+  opacity: 0.7;
+}
+.content #mysite .flex .item dl dt{
+    width: 30%;
+}
+.content #mysite .flex .item dl dd{
+    width: 70%;
+}
+#footer{
+    background-color: #fff;
+    opacity: 1;
+    text-align: center;
+}
+#footer .flex{
+    display: flex;
+    width: 84%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#footer .flex .item{
+    width: 28%;
+
+}
+#footer .flex .item:nth-child(1){
+    background-image: url();
+}
+#footer .flex .item:nth-child(2) a{
+    background-image: url("img/jmailprofile.jpeg");
+}
+#footer .flex .item:nth-child(3){
+    background-image: url();
+}
+#footer .flex .item img{
+    height:50px;
+    border-radius: 50%;
+    background-size:cover ;
+}
+@media  screen and (max-width:894px) {
+    
+}
