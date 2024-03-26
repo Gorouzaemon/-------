@@ -12,12 +12,9 @@
 	text-decoration: none;
 	font-size:0.6rem;
 	transition:all 0.3s;
-   
+    animation: arrowmove 1s ease-in-out infinite;
+	position: relative;
 }
-
-
-
-/* 動かない！？？？？ */
 
 @keyframes arrowmove {
     0%{bottom:100px;}
@@ -36,7 +33,7 @@
     /*はじめは非表示*/
 	opacity: 0;
 	transform: translateX(100px);
-    animation: arrowmove 1s ease-in-out infinite;
+   
 }
 
 /*　左の動き　*/

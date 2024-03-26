@@ -11,3 +11,11 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
 
 
 // goemonの棒伸びるやつ
+$(function(){
+  $('.mainvisual-senten').hover(function(){
+    $('.mainvisual-senten.border').addClass('grow');
+  },funtion(){
+    $('.mainvisual-senten.border').removeClass('grow');
+  }
+  )
+});

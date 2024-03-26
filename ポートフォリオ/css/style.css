@@ -25,7 +25,7 @@ body{
    background-image: url("../img/mainvisual1.jpg"),url("../img/mainvisual2.jpeg"),url("../img/maivisual3.jpg");
     width: 100%;
     height: 100vh;
-    animation: image_anime 30s ease-in-out infinite; 
+    animation: image_anime 36s ease-in-out infinite; 
     /* forwardsを設定すると100%の状態で止まる */
     animation-fill-mode: forwards; 
     /* animationを開始する時間を設定 */
@@ -41,7 +41,8 @@ body{
         background-image: url("../img/maivisual3.jpg");
     }
   }
-  
+  /* 上記背景画像のアニメーション */
+
 .section-title .ja{
     font-size: 40px;
     font-weight: 400;
@@ -75,12 +76,12 @@ body{
     background-color: #fff;
     margin: 2px auto;
 }
-.mainvisual-senten.border::after{
- transform: scale(0,1);
-    transition: all 0.4s ease-in-out;
+.mainvisual-senten.border.grow{
+ animation: growstick 0.5s ease-in-out;
 }
-.mainvisual-senten.border:hover::after{
-    transform: scale(1,1);
+@keyframes growstick {
+    0%{width: 240px;}
+    100%{width:480px;}
 }
 /* 線伸ばすのかなり苦労している */
 
@@ -155,6 +156,16 @@ span{
 }
 .content #mysite .flex .item{
     margin-bottom:80px ;
+  position: relative;
+  bottom: 0px;
+}
+.content #mysite .fles .item.active{
+    animation: itemtransition 1s  ease-in-out infinite;
+}
+@keyframes itemtransition {
+    0%{ bottom: 0px;}
+    50%{bottom: 20px;}
+    100%{bottom: 0px;}
 }
 .content #mysite .flex .item a:hover{
   opacity: 0.7;
