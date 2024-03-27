@@ -67,7 +67,7 @@ body{
         color: #fff;
         text-align: center;
         transform: skewX(-15deg);
-        padding-top: 300px ;
+        margin-top: 200px ;
 }
 .mainvisual-senten .Thank{
     font-size: 40px;
@@ -76,22 +76,26 @@ body{
     font-size: 120px;
     font-weight: 100;
 }
-.mainvisual-senten.border{
+.mainvisual-senten .border{
     height: 2px;
     width: 240px;
     background-color: #fff;
     margin: 2px auto;
 }
-.mainvisual-senten.border.grow{
- animation: growstick 0.5s ease-in-out;
+.mainvisual-senten .border.grow{
+ animation: growstick 0.5s ease-in-out forwards;
 }
 @keyframes growstick {
     0%{width: 240px;}
     100%{width:480px;}
 }
-/* 線伸ばすのかなり苦労している */
-
-
+.mainvisual-senten .border.reverce{
+    animation: reverce 0.5s ease-in-out forwards;
+}
+@keyframes reverce {
+    0%{width: 480px;}
+    100%{width: 240px;}
+}
 
 .mainvisual .studio{
     font-family: "Nanum Gothic", sans-serif;
@@ -116,7 +120,7 @@ span{
 .content #myinfo{
     position: relative;
     height: 70vh;
-   
+   margin-bottom: 100px;
 }
 .content #myinfo .section-title{
     padding-top: 28vh;
@@ -206,18 +210,41 @@ span{
     display: flex;
     width: 84%;
     margin: 0 auto;
+    padding-bottom: 50px;
     justify-content: space-between;
 }
 #footer .flex .item{
     width: 20%;
 }
-#footer .flex .item:hover{
+
+#footer .flex .item a:hover{
     opacity: 0.7;
+    color: #0481A2;
+   
+}
+#footer .flex .item a::after{
+    content: '';
+    /*絶対配置で線の位置を決める*/
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    /*線の形状*/
+    width: 80%;
+    height: 2px;
+    background:#0481A2;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    transform: scale(0, 1);/*X方向0、Y方向1*/
+    transform-origin: center top;/*上部中央基点*/
 }
 #footer .flex .item a{
    display: flex;
    flex-direction: column;
    font-size: 25px;
+   position: relative;
+}
+#footer .flex .item a:hover::after{
+    transform: scale(1,1);
 }
 #footer .flex .item a img{
     object-fit: cover;

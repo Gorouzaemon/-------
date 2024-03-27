@@ -13,8 +13,12 @@ $("#g-nav a,.mainvisual").click(function () {//ナビゲーションのリンク
 // goemonの棒伸びるやつ
 $(function(){
     $('.mainvisual-senten').hover(function(){
-    $('.border').addClass('grow');
+      if($('.border').hasClass('reverce')){
+        $('.border').removeClass('reverce');
+        $('.border').addClass('grow');
+      }
   },function(){
     $('.border').removeClass('grow');
+    $('.border').addClass('reverce');
   });
   });
