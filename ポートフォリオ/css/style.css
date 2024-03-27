@@ -172,7 +172,6 @@ span{
 }
 .content #mysite .flex .item a img{
     width: 550px;
-    height: 320px;
     object-fit: cover;
 }
 .content #mysite .flex .item .site-name{
@@ -232,8 +231,7 @@ span{
         margin-bottom: 25vh;
     }
     #myinfo .info-img{
-        position: absolute;
-        top: 20vh;
+        margin: 27vh auto 0 auto;
     }
     /* あれ？ */
     #mysite{
@@ -249,5 +247,17 @@ span{
     }
     #footer .flex .item a img{
         height: 100px;
+    }
+}
+@media screen and (max-width:605px){
+    
+    #mysite{
+        margin-top: 48vh;
+    }
+    .content #mysite .flex .item dl dd{
+        width: 40%;
+    }
+    .content #mysite .flex .item dl dt{
+        width: 60%;
     }
 }
