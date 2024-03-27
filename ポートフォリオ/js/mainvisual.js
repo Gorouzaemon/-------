@@ -4,7 +4,7 @@ $(".openbtn").click(function () {//ボタンがクリックされたら
     $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
 });
 
-$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+$("#g-nav a,.mainvisual").click(function () {//ナビゲーションのリンクがクリックされたら
     $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
@@ -12,10 +12,9 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
 
 // goemonの棒伸びるやつ
 $(function(){
-  $('.mainvisual-senten').hover(function(){
-    $('.mainvisual-senten.border').addClass('grow');
-  },funtion(){
-    $('.mainvisual-senten.border').removeClass('grow');
-  }
-  )
-});
+    $('.mainvisual-senten').hover(function(){
+    $('.border').addClass('grow');
+  },function(){
+    $('.border').removeClass('grow');
+  });
+  });

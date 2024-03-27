@@ -51,6 +51,12 @@ body{
      font-size: 60px;
      font-weight: 600;
  }
+ .openbtn img{
+  
+   position: sticky;
+  top: 0px;
+  
+ }
 .mainvisual{
     height: 100vh;
     position: relative;
@@ -70,7 +76,7 @@ body{
     font-size: 120px;
     font-weight: 100;
 }
-.mainvisual-senten .border{
+.mainvisual-senten.border{
     height: 2px;
     width: 240px;
     background-color: #fff;
@@ -135,8 +141,6 @@ span{
     top:12vh ;
     right: 70px;
     border-radius:30px ;
-    width: 300px;
-    height: 300px ;
     object-fit: cover;
 }
 .content #mysite .section-title .en{
@@ -159,7 +163,7 @@ span{
   position: relative;
   bottom: 0px;
 }
-.content #mysite .fles .item.active{
+.content #mysite .flex .item.active{
     animation: itemtransition 1s  ease-in-out infinite;
 }
 @keyframes itemtransition {
@@ -220,6 +224,12 @@ span{
     height: 200px;
     border-radius: 50%;
 }
+@media screen and (max-width:1700px){
+    #myinfo .info-img{
+        height: 300px;
+        width: 300px;
+    }
+}
 @media  screen and (max-width:834px) {
     .content{
         width: 100%;
@@ -231,9 +241,11 @@ span{
         margin-bottom: 25vh;
     }
     #myinfo .info-img{
-        margin: 27vh auto 0 auto;
+        margin: 34vh auto 0 auto;
+        height: 200px;
+        width: 200px;
+        display: block;
     }
-    /* あれ？ */
     #mysite{
         margin-top:30vh ;
     }
@@ -252,7 +264,7 @@ span{
 @media screen and (max-width:605px){
     
     #mysite{
-        margin-top: 48vh;
+        margin-top: 79vh;
     }
     .content #mysite .flex .item dl dd{
         width: 40%;
