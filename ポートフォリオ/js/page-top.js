@@ -1,6 +1,6 @@
 function PageTopAnime() {
     var scroll = $(window).scrollTop();
-    if (scroll <= 400){//上から200pxスクロールしたら
+    if (scroll >=400){//上から200pxスクロールしたら
         $('#page-top').removeClass('LeftMove');//#page-topについているRightMoveというクラス名を除く
         $('#page-top').addClass('RightMove');//#page-topについているLeftMoveというクラス名を付与
     }else{
